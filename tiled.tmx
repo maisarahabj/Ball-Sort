@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.1.1" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <editorsettings>
+  <export target="res/map/mapsheet.csv" format="csv"/>
+ </editorsettings>
+ <tileset firstgid="1" name="soil" tilewidth="16" tileheight="16" tilecount="864" columns="36">
+  <image source="../../../../Downloads/SHADOW Series - Pixel Tile Map Asset Pack 3/balls map.png" width="576" height="384"/>
+ </tileset>
+ <tileset firstgid="865" name="croppedrainbowballs" tilewidth="8" tileheight="8" tilecount="9" columns="3">
+  <image source="../../../../Downloads/croppedrainbowballs.png" width="24" height="24"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+865,866,867,868,869,870,871,872,873,0,
+865,866,867,868,869,870,871,872,873,0,
+865,866,867,868,869,870,871,872,873,0,
+865,866,867,868,869,870,871,872,873,0,
+865,866,867,868,869,870,871,872,873,0,
+865,866,867,868,869,870,871,872,873,0,
+38,39,39,39,39,39,39,40,41,42,
+74,219,87,87,87,75,75,89,77,78,
+110,111,118,119,118,120,123,125,0,114
+</data>
+ </layer>
+</map>
