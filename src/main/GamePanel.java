@@ -180,6 +180,7 @@ public class GamePanel extends JPanel implements Runnable {
     public void run() {
         while (gameThread != null) {
             stopwatch.update();
+            gameEnd();
             repaint();
             try {
                 Thread.sleep(16);

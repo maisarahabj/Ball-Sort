@@ -88,7 +88,6 @@ public class Stopwatch implements ActionListener {
         if (started) {
             currentTime = System.currentTimeMillis() - startTime;
 
-            // Convert milliseconds into readable numbers
             int h = (int) (currentTime / 3600000);
             int m = (int) (currentTime / 60000) % 60;
             int s = (int) (currentTime / 1000) % 60;
