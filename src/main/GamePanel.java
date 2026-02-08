@@ -28,7 +28,7 @@ public class GamePanel extends JPanel implements Runnable {
     // COMPONENTS
     Thread gameThread;
     MouseHandler mouseH = new MouseHandler(this);
-    Stopwatch stopwatch = new Stopwatch(this);
+    Stopwatch stopwatch = new Stopwatch();
     Font customFont;
 
     // CUSTOM CLASSES
