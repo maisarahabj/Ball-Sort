@@ -37,6 +37,7 @@ public class GamePanel extends JPanel implements Runnable {
 
     // GAME TRACKER
     boolean gameReady = false;
+    int moves = 0;
     int heldBallColor = -1;
     int heldFromCol = -1;
 
@@ -71,6 +72,7 @@ public class GamePanel extends JPanel implements Runnable {
             ballGrid.shuffle();
             gameReady = true;
             stopwatch.start();
+            moves = 0;
         }
         //PICK/DROP BALL
         else {
@@ -103,6 +105,7 @@ public class GamePanel extends JPanel implements Runnable {
             if (ballGrid.grid[col][r] == -1) {
                 ballGrid.grid[col][r] = heldBallColor;
                 heldBallColor = -1;
+                moves++;
                 break;
             }
         }
@@ -141,6 +144,9 @@ public class GamePanel extends JPanel implements Runnable {
 
         // DRAW TIMER
         g2.drawString(stopwatch.hours_string + ":" + stopwatch.minutes_string + ":" + stopwatch.seconds_string, tileSize, 50);
+
+        //MOVE COUNT
+        g2.drawString("MOVES: " + moves, tileSize, 80);
 
         //BOARDER GRID SQUARES
         g2.setColor(new Color(112, 112, 112));

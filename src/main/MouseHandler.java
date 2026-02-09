@@ -21,6 +21,7 @@ public class MouseHandler extends MouseAdapter {
             gp.stopwatch.restart();
             gp.gameReady = false;
             gp.heldBallColor = -1;
+            gp.moves = 0;
             gp.repaint();
             return;
         }
